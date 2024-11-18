@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Kha</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #0099cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .blog {
+            margin-top: 20px;
+        }
+        .blog h2 {
+            color: #0099cc;
+        }
+        .blog-form {
+            margin-bottom: 20px;
+        }
+        .blog-form input[type="file"] {
+            margin-bottom: 10px;
+        }
+        .blog-images img {
+            max-width: 100%;
+            margin: 10px 0;
+            border: 2px solid #0099cc;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0099cc;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Xin chào! Tôi là Kha</h1>
+        <p>Sở thích: Chụp ảnh phong cảnh</p>
+    </header>
+    <main>
+        <section class="blog">
+            <h2>Blog Ảnh</h2>
+            <p>Hãy tải lên những bức ảnh phong cảnh mà bạn yêu thích:</p>
+            <form class="blog-form">
+                <input type="file" accept="image/*" id="uploadInput">
+                <button type="button" onclick="uploadImage()">Tải lên</button>
+            </form>
+            <div class="blog-images" id="imageGallery"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kha | Thiết kế bởi một người bạn thân!</p>
+    </footer>
+
+    <script>
+        function uploadImage() {
+            const input = document.getElementById("uploadInput
